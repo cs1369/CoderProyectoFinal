@@ -38,7 +38,7 @@
 }
 .list-content{
     width: 90%;
-    height: 10;
+    height: 30rem;
     overflow: auto;
 }
 .list-content::-webkit-scrollbar{
