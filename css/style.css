@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(198,5,174);
+    background: linear-gradient(45deg, rgba(198,5,174,1) 0%, rgba(0,13,190,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/fondo.png);
+}
+.alumno{
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+p{
+    font-size: 1.5rem;
+}
+.menu__container{
+    position: relative;
+    background: #0000006c;
+    width: 40rem;
+    height: 20rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.btn-menu{
+    width: 15rem;
+    height: 3rem;
+    background: #0000006c;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.line-btn{
+    width: 1rem;
+    height: 3rem;
+    background: #219ebc;   
+}
+.text-btn{
+    color: #ffff;
+    font-size:1.2rem;
+    width: 100%;
+    text-align: center;
+}
+.menu-title{
+    position: absolute;
+    top: 1rem;
+    color: #ffff;
+}
+.title{
+    position: absolute;
+    top: -5rem;
+    font-size: 3rem;
+    color: #ffff;
+}
