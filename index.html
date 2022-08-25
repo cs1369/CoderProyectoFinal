@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderBaking</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
 </head>
 <body>
     <div class="alumno">
@@ -15,14 +17,23 @@
     </div>
     
   <section>
-    <div class="menu__container">
-        <a href="secciones/consultas/consultas.html" class="btn-menu"><span class="line-btn"></span><p class="text-btn">Consultas</p></a>
-        <a href="" class="btn-menu" onclick="alert('Actualmente este modulo esta en construccion.')"><span class="line-btn" ></span><p class="text-btn">Servicios</p></a>
-        <a href="" class="btn-menu" onclick="alert('Actualmente este modulo esta en construccion.')"><span class="line-btn" ></span><p class="text-btn">Depositos</p></a>
-        <a href="" class="btn-menu" onclick="alert('Actualmente este modulo esta en construccion.')"><span class="line-btn" ></span><p class="text-btn">Transferencias</p></a>
-        <h1 class="menu-title">Menu</h1>
-        <h2 class="title">Coder Bank</h2>
-    </div>
+    <div class="login__container">
+        <h1 class="login__h1">Coder Banking</h1>
+        <h3 class="login__h3">Iniciar Sesion</h3>
+        <form action="" id="form">
+            <div class="input__container">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="user" id="user" class="login__input" autocomplete="off" placeholder="Login">
+            </div>
+            <div class="input__container">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="pass" id="pass" class="login__input" placeholder="Password">
+            </div>      
+        </form>
+        <button class="btn__iniciarSesion">Iniciar Sesion</button>
+        <a href="" class="login__link">Olvide Mi Contraseña</a>
+        <a href="" class="login__link">Crear Cuenta</a>
+    </div>   
   </section> 
 </body>
 </html>
