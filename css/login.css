@@ -54,6 +54,15 @@
 #pass:focus{
     border-bottom:0.14rem solid #4361ee;
 }
+#regUser:focus{
+    border-bottom:0.14rem solid #4361ee;
+}
+#rePass:focus{
+    border-bottom:0.14rem solid #4361ee;
+}
+#email:focus{
+    border-bottom:0.14rem solid #4361ee;
+}
 i{
     font-size: 1.5rem;
     color: #4361ee;
@@ -65,4 +74,20 @@ i{
     border: none;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.login__link{
+    color:#ffff;
+}
+.btn__registro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
 }
