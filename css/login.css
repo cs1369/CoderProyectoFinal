@@ -12,6 +12,9 @@
     gap: 2rem;
     flex-wrap: wrap;
 }
+.reg{
+    height: 35rem;
+}
 .login__h1{
     position: absolute;
     top: 1rem;
@@ -90,4 +93,12 @@ i{
 }
 .green{
     background: green;
+}
+
+.error__p{
+    color:white;
+    display: inline-block;
+    background-color: red;
+    font-size: 0.7rem;
+    font-weight: lighter;
 }
