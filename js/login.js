@@ -3,7 +3,12 @@ const user = document.getElementById("user");
 const pass = document.getElementById("pass"); 
 btnIniciarSesion.addEventListener("click",()=>{
 
-    validarUsuario() ? window.location.href ="secciones/menu.html" : alert("Los datos son incorrectos");
+    validarUsuario() ? window.location.href ="secciones/menu.html" : 
+    swal({
+        title: "Error",
+        text: "Los Datos Son Incorrectos",
+        icon: "error",
+      });
 });
 
 function validarUsuario(){
