@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderBaking</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/agregarServicio.css">
+    <script defer src="../../js/registro.js"></script>
+</head>
+<body>
+    <div class="alumno">
+        <p>Alumno: Suarez Esteban Gabriel</p>
+        <p>Comision: 38030</p>
+        <p>Curso: JavaScript</p>
+    </div>
+    
+  <section>
+    <div class="login__container reg">
+        <h1 class="login__h1">Agregar Servicio</h1>
+        <form action="" id="form" autocomplete="off">
+            <div class="input__container">
+                <label for="nomservicio">Nombre del servicio:</label>
+                <input type="text" name="nomservicio" id="nomservicio" class="login__input" autocomplete="off" >
+            </div>
+            <div class="input__container">
+                <label for="vencimiento">Vencimiento:</label>
+                <input type="date" name="vencimiento" id="vencimiento" class="login__input" autocomplete="off">
+            </div>
+            <div class="input__container">
+                <label for="monto">Monto:</label>
+                <input type="number" name="monto" id="monto" class="login__input" >
+            </div>        
+        </form>
+        <div class="errores__container">
+        </div>
+        <div class="btn__registro">
+            <button id="btnRegistro" class="btn__iniciarSesion green">Agregar</button>
+            <button id="btnCancelar" class="btn__iniciarSesion red">Cancelar</button> 
+        </div>
+    </div>   
+  </section> 
+</body>
+</html>

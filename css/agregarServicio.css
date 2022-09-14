@@ -1,0 +1,13 @@
+.input__container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+label{
+    align-self: flex-start;
+    color: #ffff;
+}
+.login__input{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.219);
+}
