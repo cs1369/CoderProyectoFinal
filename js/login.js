@@ -12,11 +12,24 @@ btnIniciarSesion.addEventListener("click",()=>{
 });
 
 function validarUsuario(){
-    let ok = false;
+    let ok;
     let getLocalStorage;
     getLocalStorage = JSON.parse(localStorage.getItem("users"));
-    for(let usuario of getLocalStorage){
-        usuario.usuario === user.value && usuario.pass === pass.value ? ok=true : ok=false;       
+
+    ok =()=>{
+        let valor = false;
+        getLocalStorage.forEach(x => {
+            x.usuario == user.value && x.pass == pass.value ? valor=true : valor ;
+        });
+        return valor;
     }
-    return ok;
+     if(ok()) guardarUsuario(user.value);
+    return ok();
+}
+function guardarUsuario(usuario){
+    let gls;
+    let userOnline;
+    gls= JSON.parse(localStorage.getItem("users"));
+    userOnline=gls.filter(x=> x.usuario == usuario);
+    localStorage.setItem("Login",JSON.stringify(userOnline));
 }

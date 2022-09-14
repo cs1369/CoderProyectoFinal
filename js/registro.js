@@ -15,18 +15,25 @@ document.getElementById("btnCancelar").addEventListener("click",()=>{
     window.location.href="../../index.html";
 });
 
-function users(usuario,email,pass,repass){
+function users(usuario,email,pass,repass,cbu){
     this.usuario = usuario;
     this.email = email;
     this.pass = pass;
     this.rePass = repass;
+    this.efectivo = 120000;
+    this.cbu=cbu;
 }
 function crearUsuario(){
     if(validaciones()){
-        usuarios.push(new users(regUser.value,email.value,pass.value,rePass.value));
+        usuarios.push(new users(regUser.value,email.value,pass.value,rePass.value,generarCbu()));
         localStorage.setItem("users",JSON.stringify(usuarios));
         window.location.href="../../index.html";
     }
+}
+function generarCbu(){
+    let n1=Math.floor(Math.random(100,999)*10000000);
+    let n2=Date.now();
+    return n1+""+n2;
 }
 function validaciones(){
     let ok = false;
