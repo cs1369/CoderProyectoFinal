@@ -22,6 +22,7 @@ function users(usuario,email,pass,repass,cbu){
     this.rePass = repass;
     this.efectivo = 120000;
     this.cbu=cbu;
+    this.servicios=[];
 }
 function crearUsuario(){
     if(validaciones()){

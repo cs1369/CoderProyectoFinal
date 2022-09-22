@@ -11,3 +11,15 @@ label{
     width: 100%;
     background: rgba(0, 0, 0, 0.219);
 }
+
+#selectPagar{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.219);
+    outline: none;
+    color: #ffff;
+    font-size: 1rem;
+}
+option{
+    color: black;
+    background: white;
+}
