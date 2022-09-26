@@ -30,7 +30,7 @@ function agregar(){
     nuevaFecha.setDate(nuevaFecha.getDate()+1);
     sesion[0].servicios.push({
         nombre:nombreServicio.value,
-        vencimiento:nuevaFecha,
+        vencimiento:nuevaFecha.toLocaleDateString(),
         monto:monto.value
     });
     localStorage.setItem("Login",JSON.stringify(sesion));
