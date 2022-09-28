@@ -17,7 +17,7 @@ imprimirDatos(datos);
 function imprimirDatos(listas){
     datosRender=``;
     for (const lista of listas) {
-        datosRender += `<li class="list-items"><span class="line-btn"></span><p id="movimientoMotivo" class="movimiento-motivo">${lista.nombre}</p><p id="fechaMovimientos" class="movimiento-fecha">${lista.vencimiento}</p></li>`;
+        datosRender += `<li class="list-items"><span class="line-btn"></span><p id="movimientoMotivo" class="movimiento-motivo">${lista.nombre}</p><p id="fechaMovimientos" class="movimiento-fecha">Vto ${lista.vencimiento}</p></li>`;
     }
     list.innerHTML = datosRender;
 }

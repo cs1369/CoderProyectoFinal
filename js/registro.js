@@ -1,3 +1,5 @@
+const nombre = document.getElementById("nombre");
+const apellido = document.getElementById("apellido");
 const regUser = document.getElementById("regUser");
 const email = document.getElementById("email");
 const pass = document.getElementById("pass");
@@ -15,18 +17,20 @@ document.getElementById("btnCancelar").addEventListener("click",()=>{
     window.location.href="../../index.html";
 });
 
-function users(usuario,email,pass,repass,cbu){
+function users(nombre,apellido,usuario,email,pass,cbu){
+    this.nombre=nombre;
+    this.apellido=apellido;
     this.usuario = usuario;
     this.email = email;
     this.pass = pass;
-    this.rePass = repass;
     this.efectivo = 120000;
     this.cbu=cbu;
     this.servicios=[];
+    this.transferencias=[];
 }
 function crearUsuario(){
     if(validaciones()){
-        usuarios.push(new users(regUser.value,email.value,pass.value,rePass.value,generarCbu()));
+        usuarios.push(new users(nombre.value,apellido.value,regUser.value,email.value,pass.value,generarCbu()));
         localStorage.setItem("users",JSON.stringify(usuarios));
         window.location.href="../../index.html";
     }

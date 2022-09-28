@@ -61,3 +61,12 @@
     padding-right:1rem;
 
 }
+.movimiento-motivo{
+    width: 50%;
+    text-align: start;
+    padding: 0 1rem;
+}
+.movimiento-fecha{
+    width: 50%;
+    text-align: end;
+}
