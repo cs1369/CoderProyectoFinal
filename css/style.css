@@ -77,3 +77,10 @@ p{
     font-size: 3rem;
     color: #ffff;
 }
+.buscar_cbu{
+    display: flex;
+    gap: 0.5rem;
+}
+#buscarCbu{
+    cursor: pointer;
+}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/agregarServicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script defer src="../../js/nuevaCuenta.js"></script>
+    <script defer src="../../js/transferir.js"></script>
 </head>
 <body>
     <div class="alumno">
@@ -21,28 +21,30 @@
     
   <section>
     <div class="login__container reg">
-        <h1 class="login__h1">Nueva Cuenta</h1>
+        <h1 class="login__h1">Transferir</h1>
         <form action="" id="form" autocomplete="off">
             <div class="input__container">
-                <label for="cbu">ingrese CBU:</label>
-                <div class="buscar_cbu">
-                    <input type="text" name="cbu" id="cbuCuenta" class="login__input" autocomplete="off" >
-                    <i class="fa-solid fa-magnifying-glass" id="buscarCbu"></i>
-                </div>                
+                <label for="fondos">Mi cuenta:</label>
+                <input type="text" name="fondos" id="fondos" class="login__input" autocomplete="off">
             </div>
             <div class="input__container">
-                <label for="nombre">Nombre:</label>
+                <label for="select">CBU:</label>
+                <select name="select" id="selectPagar">
+                </select>                
+            </div>
+            <div class="input__container">
+                <label for="nombre">Nombre y Apellido:</label>
                 <input type="text" name="nombre" id="nombreCuenta" class="login__input" autocomplete="off">
             </div>
             <div class="input__container">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellidoCuenta" class="login__input" >
+                <label for="monto">Monto a Transferir:</label>
+                <input type="number" name="monto" id="montoTransferencia" class="login__input" >
             </div>        
         </form>
         <div class="errores__container">
         </div>
         <div class="btn__registro">
-            <button id="agregarCuenta" class="btn__iniciarSesion green">Agregar</button>
+            <button id="borrarCuenta" class="btn__iniciarSesion green">Transferir</button>
             <a href="menuTrasferencias.html" id="btnCancelar" class="btn__iniciarSesion red">Cancelar</a> 
         </div>
     </div>   

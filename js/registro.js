@@ -27,6 +27,7 @@ function users(nombre,apellido,usuario,email,pass,cbu){
     this.cbu=cbu;
     this.servicios=[];
     this.transferencias=[];
+    this.cuentas=[];
 }
 function crearUsuario(){
     if(validaciones()){
