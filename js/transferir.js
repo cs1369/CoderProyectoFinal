@@ -3,6 +3,7 @@ const nombre = document.getElementById("nombreCuenta");
 const montoTransferencia = document.getElementById("montoTransferencia");
 const borrarCuenta = document.getElementById("borrarCuenta");
 const fondos = document.getElementById("fondos");
+const btnTransferir = document.getElementById("transferir");
 const login = JSON.parse(localStorage.getItem("Login"));
 const users = JSON.parse(localStorage.getItem("users"));
 
@@ -27,3 +28,21 @@ selectCuenta.addEventListener("change",()=>{
         }
     }
 });
+
+btnTransferir.addEventListener("click",()=>{
+    if(parseInt(montoTransferencia.value) >= 0 && parseInt(montoTransferencia.value) <= login[0].efectivo ){
+        transferir();
+        window.location.href="/secciones/transferencias/menuTrasferencias.html"
+    }else{
+        swal("Algo salio mal!", "Verifique el monto a transferir!", "warning");
+    }
+});
+
+function transferir(){
+    login[0].efectivo-=parseInt(montoTransferencia.value);
+    for (const user of users) {
+        if(user.cbu == selectCuenta.value) user.efectivo+=parseInt(montoTransferencia.value);
+    }
+    localStorage.setItem("Login",JSON.stringify(login));
+    localStorage.setItem("users",JSON.stringify(users));
+}
